@@ -57,14 +57,14 @@
 
 /* ANIMATIONS */
 .btn-animated:link {
-  transition: all 0.6s ease;
+  transition: all 0.8s ease;
 }
 .btn-animated:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 .btn-animated:active,
-:visited {
+.btn-animated:visited {
   transform: translateY(0px);
-  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
