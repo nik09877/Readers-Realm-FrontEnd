@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 export const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-dark main-color py-3'>
@@ -17,23 +19,27 @@ export const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarNavDropdown'>
           <ul className='navbar-nav'>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
+              <NavLink className='nav-link' to='/home'>
                 {' '}
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className='nav-item'>
-              <a className='nav-link' href='#'>
+              <NavLink className='nav-link' to='/search'>
                 {' '}
                 Search Books
-              </a>
+              </NavLink>
             </li>
           </ul>
           <ul className='navbar-nav ms-auto'>
             <li className='nav-item m-1'>
-              <a type='button' className='btn btn-outline-light' href='#'>
+              <NavLink
+                type='button'
+                className='btn btn-outline-light'
+                to='/auth'
+              >
                 Sign in
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
