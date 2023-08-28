@@ -15,6 +15,7 @@ export const SearchBooksPage = () => {
   const [booksPerPage, setBooksPerPage] = useState(5);
   const [totalAmountOfBooks, setTotalAmountOfBooks] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
+
   //COMMENT Search LOGIC
   const [search, setSearch] = useState('');
   const [searchUrl, setSearchUrl] = useState('');
